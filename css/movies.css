@@ -1,0 +1,44 @@
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.movie-item {
+    inline-size: 13.75rem;
+    block-size: 20.5rem;
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.movie-img img {
+    block-size: 100%;
+    inline-size: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.movie-score {
+    text-decoration: none;
+    font: var(--headline3);
+    color: var(--white);
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    background: rgba(0, 0, 0, .5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.most-valued {
+    border: 2px solid var(--primary);
+    border-left: none;
+}
+
+.least-valued {
+    border: 2px solid #0E3FA9;
+    border-left: none;
+}

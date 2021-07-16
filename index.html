@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/logo-blockBuster.png" alt="">
+            </div>
+            <nav class="nav">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#/all" class="active-item" data-type="all">
+                            <span>Todas</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#/mas-valoradas" data-type="mostValued">
+                            <span>Mas valoradas</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#/menos-valoradas" data-type="leastValued">
+                            <span>Menos valoradas</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form action="" class="search-form" id="searchForm">
+                <input type="search" class="input-search" placeholder="Busca tu pelicula favorita">
+                <button class="button-search">
+                    <i><img src="./assets/icon-search.png" alt=""></i>
+                </button>
+            </form>
+        </header>
+        <div class="slider">
+            <div class="slider-container" id="slider">
+                <div class="slide">
+                    <img src="./assets/mulan.png" class="slide__image" alt="">
+                    <div class="slider-buttons">
+                        <a href="#" class="button-cta btn-primary margin-right">
+                            <img src="./assets/icon-play.png" alt="Icon play" aria-hidden="true">
+                            <span>VER AHORA</span>
+                        </a>
+                        <a href="#" class="button-cta btn-secondary">
+                            <img src="./assets/icon-plus.png" alt="Icon play" aria-hidden="true">
+                            <span>VER DESPUES</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/raya.png" class="slide__image" alt="">
+                    <div class="slider-buttons">
+                        <a href="#" class="button-cta btn-primary margin-right">
+                            <img src="./assets/icon-play.png" alt="Icon play" aria-hidden="true">
+                            <span>VER AHORA</span>
+                        </a>
+                        <a href="#" class="button-cta btn-secondary">
+                            <img src="./assets/icon-plus.png" alt="Icon play" aria-hidden="true">
+                            <span>VER DESPUES</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/unidos.png" class="slide__image" alt="">
+                    <div class="slider-buttons">
+                        <a href="#" class="button-cta btn-primary margin-right">
+                            <img src="./assets/icon-play.png" alt="Icon play" aria-hidden="true">
+                            <span>VER AHORA</span>
+                        </a>
+                        <a href="#" class="button-cta btn-secondary">
+                            <img src="./assets/icon-plus.png" alt="Icon play" aria-hidden="true">
+                            <span>VER DESPUES</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-indicator">
+                <div class="circle circle-indicator active"></div>
+                <div class="circle circle-indicator"></div>
+                <div class="circle circle-indicator"></div>
+            </div>
+        </div>
+        <main class="main">
+            <h2 class="title"></h2>
+            <div class="movies-list" id="movie-list">
+            
+            </div>
+        </main>
+        <div class="loader" id="loader">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+        <div id="intersector"></div>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
